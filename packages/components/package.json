@@ -1,0 +1,33 @@
+{
+  "name": "@next-esm/next",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "imports": {
+    "#i18n": {
+      "react-server": "./dist/i18n/server.js",
+      "default": "./dist/i18n/client.js"
+    }
+  },
+  "exports": {
+    "./client": "./dist/client.js",
+    "./server": "./dist/server.js",
+    "./i18n": {
+      "react-server": "./dist/i18n/server.js",
+      "default": "./dist/i18n/client.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "next": "14.2.11",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.6.3"
+  }
+}

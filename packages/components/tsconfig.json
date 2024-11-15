@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "skipLibCheck": false,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ES6",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "baseUrl": "./",
+    "jsx": "react-jsx",
+    "resolveJsonModule": true,
+    "outDir": "./dist",
+    "sourceMap": true,
+    "noEmit": false,
+    "incremental": false,
+    "declaration": true,
+    "rootDir": "./src",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["dist", "node_modules"]
+}
